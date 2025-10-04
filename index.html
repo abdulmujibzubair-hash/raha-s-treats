@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sweet Treats Bakery</title>
+  <meta name="description" content="Sweet Treats Bakery - Handmade cakes and pastries. Order online or contact us via WhatsApp!">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #f7c59f;
+      --secondary: #fff1e6;
+      --accent: #d87c7c;
+      --text: #333;
+      --muted: #666;
+      --ff-heading: 'Pacifico', cursive;
+      --ff-body: 'Inter', sans-serif;
+    }
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body { font-family: var(--ff-body); background: var(--secondary); color: var(--text); }
+    a { color: var(--accent); text-decoration:none; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+
+    /* Header */
+    header { display:flex; justify-content:space-between; align-items:center; padding:20px 0; }
+    .logo { font-family: var(--ff-heading); font-size:28px; color: var(--accent); }
+    nav { display:flex; gap:16px; }
+    nav a { font-weight:600; }
+
+    /* Hero */
+    .hero { display:flex; flex-direction:column; align-items:center; text-align:center; margin:40px 0; }
+    .hero h1 { font-family: var(--ff-heading); font-size:40px; color: var(--accent); margin-bottom:16px; }
+    .hero p { font-size:18px; color: var(--muted); margin-bottom:20px; }
+    .hero img { max-width:100%; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.1); }
+    .cta { background: var(--accent); color:#fff; padding:12px 24px; border-radius:12px; font-weight:600; }
+
+    /* Sections */
+    section { margin:40px 0; }
+    h2 { font-family: var(--ff-heading); font-size:32px; color: var(--accent); margin-bottom:20px; text-align:center; }
+    p { margin-bottom:16px; }
+
+    /* Products Grid */
+    .products { display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:20px; }
+    .product-card { background:#fff; border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); text-align:center; transition:transform 0.3s; }
+    .product-card:hover { transform: translateY(-6px); }
+    .product-card img { width:100%; height:180px; object-fit:cover; }
+    .product-card h3 { font-family: var(--ff-heading); margin:12px 0 6px; }
+    .product-card p { color: var(--muted); font-size:14px; margin-bottom:12px; }
+
+    /* Contact */
+    .contact { text-align:center; }
+    .contact a { display:inline-block; margin-top:12px; }
+
+    /* Footer */
+    footer { text-align:center; color: var(--muted); font-size:14px; margin:40px 0 20px; }
+
+    /* Responsive */
+    @media(max-width:768px){
+      .hero h1 { font-size:32px; }
+      nav { flex-direction:column; gap:12px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo"><h3>RAHA'S TREATS</h3></div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+        <a href="order.html">Order</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Delicious Handmade Treats</h1>
+      <p>Freshly baked cakes, cookies, and pastries. Made with love for every occasion!</p>
+      <img src="images/bakery.jpg" alt="Bakery showcase image">
+      <br><a href="https://wa.me/2348107351145" target="_blank" class="cta">Order Now on WhatsApp</a>
+      <a href="mailto:zu"></a>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Raha's treats was founded by [Zubair Mareeyham Olaide], who believes that every bite should bring joy. We specialize in handmade cakes, pastries, and cookies, snacks, small-chops, using the finest ingredients.</p>
+    </section>
+
+    <section id="products">
+      <h2>Our Products</h2>
+      <div class="products">
+        <div class="product-card">
+          <img src="images/plaincake.jpg" alt="Plain Cake">
+          <h3>Plain Chocolate Cake</h3>
+          <p>Rich and moist plain chocolate cake.</p>
+        </div>
+        <div class="product-card">
+          <img src="images/small chops.jpg" alt="Vanilla Cupcakes">
+          <h3>Small Chops</h3>
+          <p>Freshly baked small chops.</p>
+        </div>
+        <div class="product-card">
+          <img src="images/cookies.jpg" alt="Cookies">
+          <h3>Assorted Cookies</h3>
+          <p>Freshly baked cookies in a variety of flavors.</p>
+        </div>
+        <div class="product-card">
+          <img src="images/birthdaycake.jpg" alt="Cookies">
+          <h3>Birthday Cakes</h3>
+          <p>Freshly baked birthday cake in a variety of flavors.</p>
+        </div>
+        <div class="product-card">
+          <img src="images/chinchin.jpg" alt="Cookies">
+          <h3>Crunchy Chinchin</h3>
+          <p>Freshly baked delicious and crunchy chinchin in a variety of sizes.</p>
+          <h3>price:#500</h3>
+        </div>
+        <div class="product-card">
+          <img src="images/peanut.jpg" alt="Cookies">
+          <h3>Crunchy Peanut</h3>
+          <p>Freshly baked delicious and crunchy chinchin in a variety of sizes.</p>
+        </div>
+        <div class="product-card">
+          <img src="images/foilcakes.jpg" alt="Cookies">
+          <h3>Foil Cakes</h3>
+          <p>Freshly baked foil cakes in a variety of flavors.</p>
+        </div>
+        <div class="product-card">
+          <img src="images/meatpie.jpg" alt="Cookies">
+          <h3>Meat pie</h3>
+          <p>Freshly baked meat pie.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <p>Want to place an order or ask a question? Send us a message!</p>
+      <a href="https://wa.me/2348107351145" target="_blank" class="cta">Chat on WhatsApp</a>
+      <p>Email: <a href="mailto:bakery@example.com">bakery@example.com</a></p>
+      <p>motto: Your satisfaction is our major concern</p>
+    </section>
+    <footer>
+      &copy; <span id="year"></span> Sweet Treats Bakery. All Rights Reserved.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
