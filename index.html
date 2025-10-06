@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sweet Treats Bakery</title>
+  <title>Raha's Treats Bakery</title>
   <meta name="description" content="Sweet Treats Bakery - Handmade cakes and pastries. Order online or contact us via WhatsApp!">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
@@ -38,14 +38,18 @@
     section { margin:40px 0; }
     h2 { font-family: var(--ff-heading); font-size:32px; color: var(--accent); margin-bottom:20px; text-align:center; }
     p { margin-bottom:16px; }
-
+    .price h3 {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 25px; color: blue;}
     /* Products Grid */
-    .products { display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:20px; }
+    .products { display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:50px; }
     .product-card { background:#fff; border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); text-align:center; transition:transform 0.3s; }
     .product-card:hover { transform: translateY(-6px); }
     .product-card img { width:100%; height:180px; object-fit:cover; }
     .product-card h3 { font-family: var(--ff-heading); margin:12px 0 6px; }
     .product-card p { color: var(--muted); font-size:14px; margin-bottom:12px; }
+    .product-prizing {  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 50px; background:#fff; border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); text-align:center; transition:transform 0.3s; }
+    .price { display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:40px; }
+    .price h4 { word-spacing: 50px;}
+    .product-prizing:hover { transform: translateY(-6px); }
 
     /* Contact */
     .contact { text-align:center; }
@@ -69,7 +73,7 @@
         <a href="#about">About</a>
         <a href="#products">Products</a>
         <a href="#contact">Contact</a>
-        <a href="order.html">Order</a>
+        <a href="#pricing">Pricing</a>
       </nav>
     </header>
 
@@ -83,7 +87,7 @@
 
     <section id="about">
       <h2>About Us</h2>
-      <p>Raha's treats was founded by [Zubair Mareeyham Olaide], who believes that every bite should bring joy. We specialize in handmade cakes, pastries, and cookies, snacks, small-chops, using the finest ingredients.</p>
+      <p>Raha's treats was founded by [Zubair Mareeyham Olaide], who believes that every bite should bring joy. We specialize in handmade cakes, pastries, and cookies, snacks, small-chops, crunchy and milky chinchin, using the finest ingredients.</p>
     </section>
 
     <section id="products">
@@ -113,7 +117,6 @@
           <img src="images/chinchin.jpg" alt="Cookies">
           <h3>Crunchy Chinchin</h3>
           <p>Freshly baked delicious and crunchy chinchin in a variety of sizes.</p>
-          <h3>price:#500</h3>
         </div>
         <div class="product-card">
           <img src="images/peanut.jpg" alt="Cookies">
@@ -132,13 +135,60 @@
         </div>
       </div>
     </section>
-
+    <section id="pricing">
+      <h2>Prices</h2>
+          <div class="product-prizing">
+           <div class="price">
+            <h3>Crunchy Chinchin</h3>
+            <h4>500ml  #2,500</h4>
+            <h4>1litre #5,000</h4>
+            <h4>2litre #10,000</h4>
+            <h4>4litre #18,000</h4>
+            <h4>5litre #22,000</h4>
+          </div>
+          <div class="price">
+            <h3>Cake</h3>
+            <h5>Small sized foil cake #1,500</h5>
+            <h5>Big sized foil cake  #2,500</h5>
+            <h5>plain cup cake(12pcs)  #6,000</h5>
+            <h5>Plain cup cake(25pcs) #12,000</h5>
+            <h5>Plain Chocolate Cake  #7,000</h5>
+            <h5>Birhtday Cakes Price Varies With Size</h5>
+          </div>
+          <div class="price">
+            <h3>Peanut</h3>
+            <h4>500ml  #3,000</h4>
+            <h4>1litre #6,000</h4>
+            <h4>2litre #11,000</h4>
+            <h4>4litre #20,000</h4>
+            <h4>5litre #25,000</h4>
+          </div>
+          <div class="price">
+            <h3>Small Chops</h3>
+            <h5>Samosa(12pcs) #3,000</h5>
+            <h5>Spring roll(12pcs) #3,000</h5>
+            <h5>Puff Puff(25pcs) #2,500</h5>
+            <h5>Puff Puff(50pcs) #5,000</h5>
+          </div>
+          <div class="price">
+            <h3>Meat Pie</h3>
+            <h5>Box of 3 #4,000</h5>
+            <h5>Box of 6 #8,000</h5>
+            <h5>Box of 12 #11,000</h5>
+          </div>
+          <div class="price">
+            <h3></h3>
+            <h1></h1>
+          </div>
+          </div>
+    </section>
     <section id="contact" class="contact">
       <h2>Contact Us</h2>
       <p>Want to place an order or ask a question? Send us a message!</p>
       <a href="https://wa.me/2348107351145" target="_blank" class="cta">Chat on WhatsApp</a>
-      <p>Email: <a href="mailto:bakery@example.com">bakery@example.com</a></p>
-      <p>motto: Your satisfaction is our major concern</p>
+      <p>Email: <a href="mailto:maryamzubairolaide@gmail.com">maryamzubairolaide@gmail.com</a></p>
+      <p>Taste once, buy more</p>
+      <p>Your satisfaction is our major concern</p>
     </section>
     <footer>
       &copy; <span id="year"></span> Sweet Treats Bakery. All Rights Reserved.
